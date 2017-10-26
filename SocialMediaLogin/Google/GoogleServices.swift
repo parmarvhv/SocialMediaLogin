@@ -67,15 +67,11 @@ extension GoogleServices: GIDSignInDelegate, GIDSignInUIDelegate {
 }
 
 extension GIDGoogleUser: UserDelegate {
-    public var firstName: String {
-        return self.profile.givenName
+    public var name: String {
+        return self.profile.name
     }
     
-    public var lastName: String {
-        return self.profile.familyName
-    }
-    
-    public var email: String {
+    public var email: String? {
         return self.profile.email
     }
 }

@@ -17,8 +17,8 @@ class SocialMediaLoginViewController: UIViewController {
     @IBAction func handleGoogleConnectTapped(_ sender: Any) {
         GoogleServices.shared.login(viewController: self) { (user, error) in
             if error == nil {
-                guard let firstName = user?.firstName, let lastName = user?.lastName, let email = user?.email else { return }
-                print("Google User: \n First Name: \(firstName) \n LastName: \(lastName) \n Email: \(email)")
+                guard let name = user?.name, let email = user?.email else { return }
+                print("Google User: \n First Name: \(name) \n Email: \(email)")
             }
         }
     }

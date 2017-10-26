@@ -42,20 +42,15 @@ public class FacebookServices {
                 (connection, result, error) in
                 guard error != nil else { return }
                 self.dictonary = result as! [String: Any]
-                completion(User(firstName: self.firstName, lastName: self.lastName, email: self.email))
+                completion(User(name: self.name, email: self.email))
             })
         }
     }
 }
 
 extension FacebookServices {
-    
-    public var firstName: String {
-        return self.dictonary["first_name"] as! String
-    }
-    
-    public var lastName: String {
-        return self.dictonary["last_name"] as! String
+    public var name: String {
+        return self.dictonary["name"] as! String
     }
     
     public var email: String {
