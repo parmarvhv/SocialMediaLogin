@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		A65401E592540BD8A157A362 /* Pods_SocialMediaLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132631539F5701BD9E399230 /* Pods_SocialMediaLogin.framework */; };
 		FB95F05F1FA1CF3700CEB40E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95F05E1FA1CF3700CEB40E /* AppDelegate.swift */; };
-		FB95F0611FA1CF3700CEB40E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95F0601FA1CF3700CEB40E /* ViewController.swift */; };
+		FB95F0611FA1CF3700CEB40E /* SocialMediaLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95F0601FA1CF3700CEB40E /* SocialMediaLoginViewController.swift */; };
 		FB95F0641FA1CF3700CEB40E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0621FA1CF3700CEB40E /* Main.storyboard */; };
 		FB95F0661FA1CF3700CEB40E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0651FA1CF3700CEB40E /* Assets.xcassets */; };
 		FB95F0691FA1CF3700CEB40E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0671FA1CF3700CEB40E /* LaunchScreen.storyboard */; };
+		FB95F0781FA1E8E900CEB40E /* GoogleServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95F0771FA1E8E900CEB40E /* GoogleServices.swift */; };
+		FB95F07A1FA1EE1A00CEB40E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95F0791FA1EE1A00CEB40E /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +23,13 @@
 		F7BD10B18E8F7616A48BCACF /* Pods-SocialMediaLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMediaLogin/Pods-SocialMediaLogin.release.xcconfig"; sourceTree = "<group>"; };
 		FB95F05B1FA1CF3700CEB40E /* SocialMediaLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMediaLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB95F05E1FA1CF3700CEB40E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB95F0601FA1CF3700CEB40E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB95F0601FA1CF3700CEB40E /* SocialMediaLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaLoginViewController.swift; sourceTree = "<group>"; };
 		FB95F0631FA1CF3700CEB40E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB95F0651FA1CF3700CEB40E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB95F0681FA1CF3700CEB40E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB95F06A1FA1CF3700CEB40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB95F0771FA1E8E900CEB40E /* GoogleServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleServices.swift; path = Google/GoogleServices.swift; sourceTree = "<group>"; };
+		FB95F0791FA1EE1A00CEB40E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +84,7 @@
 			children = (
 				FB95F0701FA1D1CA00CEB40E /* Model */,
 				FB95F05E1FA1CF3700CEB40E /* AppDelegate.swift */,
-				FB95F0601FA1CF3700CEB40E /* ViewController.swift */,
+				FB95F0601FA1CF3700CEB40E /* SocialMediaLoginViewController.swift */,
 				FB95F0621FA1CF3700CEB40E /* Main.storyboard */,
 				FB95F0651FA1CF3700CEB40E /* Assets.xcassets */,
 				FB95F0671FA1CF3700CEB40E /* LaunchScreen.storyboard */,
@@ -92,6 +96,7 @@
 		FB95F0701FA1D1CA00CEB40E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FB95F0791FA1EE1A00CEB40E /* User.swift */,
 				FB95F0711FA1D1D200CEB40E /* GoogleServices */,
 				FB95F0721FA1D1E400CEB40E /* FacebookServices */,
 				FB95F0731FA1D1F100CEB40E /* TwitterServices */,
@@ -103,6 +108,7 @@
 		FB95F0711FA1D1D200CEB40E /* GoogleServices */ = {
 			isa = PBXGroup;
 			children = (
+				FB95F0771FA1E8E900CEB40E /* GoogleServices.swift */,
 			);
 			name = GoogleServices;
 			sourceTree = "<group>";
@@ -277,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB95F0611FA1CF3700CEB40E /* ViewController.swift in Sources */,
+				FB95F07A1FA1EE1A00CEB40E /* User.swift in Sources */,
+				FB95F0611FA1CF3700CEB40E /* SocialMediaLoginViewController.swift in Sources */,
+				FB95F0781FA1E8E900CEB40E /* GoogleServices.swift in Sources */,
 				FB95F05F1FA1CF3700CEB40E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +454,7 @@
 				FB95F06F1FA1CF3700CEB40E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
