@@ -9,19 +9,16 @@
 import Foundation
 
 public protocol UserDelegate {
-    var firstName:String { get }
-    var lastName:String { get }
+    var name:String { get }
     var email:String? { get }
 }
 
 public class User {
-    public var firstName: String
-    public var lastName: String
+    public var name: String
     public var email: String?
     
-    public init(firstName: String, lastName: String, email: String?) {
-        self.firstName = firstName
-        self.lastName = lastName
+    public init(name: String, email: String?) {
+        self.name = name
         self.email = email
     }
 }

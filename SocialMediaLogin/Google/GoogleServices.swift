@@ -12,12 +12,12 @@ import Google
 
 public class GoogleServices: NSObject {
     public static let shared = GoogleServices()
-    public typealias LoginHandler = (User?, Error?) -> Void
+    public typealias LoginHandler = (UserDelegate?, Error?) -> Void
     
     fileprivate var loginHandler: LoginHandler?
     fileprivate var viewController: UIViewController?
     
-    var user: User!
+    var user: UserDelegate!
     
     public func configure() {
         var configureError: NSError?
@@ -66,7 +66,7 @@ extension GoogleServices: GIDSignInDelegate, GIDSignInUIDelegate {
     }
 }
 
-extension GIDGoogleUser: User {
+extension GIDGoogleUser: UserDelegate {
     public var firstName: String {
         return self.profile.givenName
     }
