@@ -15,6 +15,7 @@
 		FB95F0691FA1CF3700CEB40E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0671FA1CF3700CEB40E /* LaunchScreen.storyboard */; };
 		FB95F0781FA1E8E900CEB40E /* GoogleServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95F0771FA1E8E900CEB40E /* GoogleServices.swift */; };
 		FB95F07A1FA1EE1A00CEB40E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95F0791FA1EE1A00CEB40E /* User.swift */; };
+		FB95F07C1FA1F35100CEB40E /* Facebook Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95F07B1FA1F35100CEB40E /* Facebook Services.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FB95F06A1FA1CF3700CEB40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB95F0771FA1E8E900CEB40E /* GoogleServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleServices.swift; path = Google/GoogleServices.swift; sourceTree = "<group>"; };
 		FB95F0791FA1EE1A00CEB40E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
+		FB95F07B1FA1F35100CEB40E /* Facebook Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Facebook Services.swift"; path = "Model/Facebook/Facebook Services.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		FB95F0721FA1D1E400CEB40E /* FacebookServices */ = {
 			isa = PBXGroup;
 			children = (
+				FB95F07B1FA1F35100CEB40E /* Facebook Services.swift */,
 			);
 			name = FacebookServices;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				FB95F07A1FA1EE1A00CEB40E /* User.swift in Sources */,
 				FB95F0611FA1CF3700CEB40E /* SocialMediaLoginViewController.swift in Sources */,
 				FB95F0781FA1E8E900CEB40E /* GoogleServices.swift in Sources */,
+				FB95F07C1FA1F35100CEB40E /* Facebook Services.swift in Sources */,
 				FB95F05F1FA1CF3700CEB40E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
