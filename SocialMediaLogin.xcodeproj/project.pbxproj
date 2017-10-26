@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB95F05F1FA1CF3700CEB40E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95F05E1FA1CF3700CEB40E /* AppDelegate.swift */; };
+		FB95F0611FA1CF3700CEB40E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95F0601FA1CF3700CEB40E /* ViewController.swift */; };
+		FB95F0641FA1CF3700CEB40E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0621FA1CF3700CEB40E /* Main.storyboard */; };
+		FB95F0661FA1CF3700CEB40E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0651FA1CF3700CEB40E /* Assets.xcassets */; };
+		FB95F0691FA1CF3700CEB40E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0671FA1CF3700CEB40E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB95F05B1FA1CF3700CEB40E /* SocialMediaLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMediaLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB95F05E1FA1CF3700CEB40E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB95F0601FA1CF3700CEB40E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB95F0631FA1CF3700CEB40E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB95F0651FA1CF3700CEB40E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB95F0681FA1CF3700CEB40E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB95F06A1FA1CF3700CEB40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB95F0581FA1CF3700CEB40E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB95F0521FA1CF3700CEB40E = {
+			isa = PBXGroup;
+			children = (
+				FB95F05D1FA1CF3700CEB40E /* SocialMediaLogin */,
+				FB95F05C1FA1CF3700CEB40E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB95F05C1FA1CF3700CEB40E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB95F05B1FA1CF3700CEB40E /* SocialMediaLogin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB95F05D1FA1CF3700CEB40E /* SocialMediaLogin */ = {
+			isa = PBXGroup;
+			children = (
+				FB95F0701FA1D1CA00CEB40E /* Model */,
+				FB95F05E1FA1CF3700CEB40E /* AppDelegate.swift */,
+				FB95F0601FA1CF3700CEB40E /* ViewController.swift */,
+				FB95F0621FA1CF3700CEB40E /* Main.storyboard */,
+				FB95F0651FA1CF3700CEB40E /* Assets.xcassets */,
+				FB95F0671FA1CF3700CEB40E /* LaunchScreen.storyboard */,
+				FB95F06A1FA1CF3700CEB40E /* Info.plist */,
+			);
+			path = SocialMediaLogin;
+			sourceTree = "<group>";
+		};
+		FB95F0701FA1D1CA00CEB40E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB95F0711FA1D1D200CEB40E /* GoogleServices */,
+				FB95F0721FA1D1E400CEB40E /* FacebookServices */,
+				FB95F0731FA1D1F100CEB40E /* TwitterServices */,
+				FB95F0741FA1D1FB00CEB40E /* LinkedInServices */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FB95F0711FA1D1D200CEB40E /* GoogleServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = GoogleServices;
+			sourceTree = "<group>";
+		};
+		FB95F0721FA1D1E400CEB40E /* FacebookServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FacebookServices;
+			sourceTree = "<group>";
+		};
+		FB95F0731FA1D1F100CEB40E /* TwitterServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TwitterServices;
+			sourceTree = "<group>";
+		};
+		FB95F0741FA1D1FB00CEB40E /* LinkedInServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LinkedInServices;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB95F05A1FA1CF3700CEB40E /* SocialMediaLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB95F06D1FA1CF3700CEB40E /* Build configuration list for PBXNativeTarget "SocialMediaLogin" */;
+			buildPhases = (
+				FB95F0571FA1CF3700CEB40E /* Sources */,
+				FB95F0581FA1CF3700CEB40E /* Frameworks */,
+				FB95F0591FA1CF3700CEB40E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialMediaLogin;
+			productName = SocialMediaLogin;
+			productReference = FB95F05B1FA1CF3700CEB40E /* SocialMediaLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB95F0531FA1CF3700CEB40E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Vaibhav Parmar";
+				TargetAttributes = {
+					FB95F05A1FA1CF3700CEB40E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = STRYF8536N;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FB95F0561FA1CF3700CEB40E /* Build configuration list for PBXProject "SocialMediaLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB95F0521FA1CF3700CEB40E;
+			productRefGroup = FB95F05C1FA1CF3700CEB40E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB95F05A1FA1CF3700CEB40E /* SocialMediaLogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB95F0591FA1CF3700CEB40E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB95F0691FA1CF3700CEB40E /* LaunchScreen.storyboard in Resources */,
+				FB95F0661FA1CF3700CEB40E /* Assets.xcassets in Resources */,
+				FB95F0641FA1CF3700CEB40E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB95F0571FA1CF3700CEB40E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB95F0611FA1CF3700CEB40E /* ViewController.swift in Sources */,
+				FB95F05F1FA1CF3700CEB40E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB95F0621FA1CF3700CEB40E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB95F0631FA1CF3700CEB40E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB95F0671FA1CF3700CEB40E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB95F0681FA1CF3700CEB40E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB95F06B1FA1CF3700CEB40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB95F06C1FA1CF3700CEB40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB95F06E1FA1CF3700CEB40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = STRYF8536N;
+				INFOPLIST_FILE = SocialMediaLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickelfox.SocialMediaLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FB95F06F1FA1CF3700CEB40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = STRYF8536N;
+				INFOPLIST_FILE = SocialMediaLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickelfox.SocialMediaLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB95F0561FA1CF3700CEB40E /* Build configuration list for PBXProject "SocialMediaLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB95F06B1FA1CF3700CEB40E /* Debug */,
+				FB95F06C1FA1CF3700CEB40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB95F06D1FA1CF3700CEB40E /* Build configuration list for PBXNativeTarget "SocialMediaLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB95F06E1FA1CF3700CEB40E /* Debug */,
+				FB95F06F1FA1CF3700CEB40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB95F0531FA1CF3700CEB40E /* Project object */;
+}

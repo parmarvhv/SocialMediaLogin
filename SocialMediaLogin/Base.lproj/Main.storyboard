@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A405" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Social Media Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SocialMediaLoginViewController" customModule="SocialMediaLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afp-3A-9R3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4l6-9J-Sdp">
+                                        <rect key="frame" x="50" y="175" width="274" height="40"/>
+                                        <color key="backgroundColor" red="0.84543681144714355" green="0.31429475545883179" blue="0.25086575746536255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="juX-Zv-CCd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                        <state key="normal" title="Connect with Google">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleGoogleConnectTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t8C-7S-M2s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHk-nq-eoo">
+                                        <rect key="frame" x="50" y="225" width="274" height="40"/>
+                                        <color key="backgroundColor" red="0.33631712198257446" green="0.43591457605361938" blue="0.69416946172714233" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Ii2-Z0-hXp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                        <state key="normal" title="Connect with Facebook">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleFBConnectTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2DC-kQ-YQZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRZ-wp-ive">
+                                        <rect key="frame" x="50" y="275" width="274" height="40"/>
+                                        <color key="backgroundColor" red="0.3014037013053894" green="0.61989271640777588" blue="0.91771358251571655" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="iw7-av-cys"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                        <state key="normal" title="Connect with Twitter">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleTwitterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3cH-0x-p0A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neg-H5-vso">
+                                        <rect key="frame" x="50" y="325" width="274" height="40"/>
+                                        <color key="backgroundColor" red="0.19810968637466431" green="0.4599226713180542" blue="0.69024765491485596" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="fSZ-7u-ivP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                        <state key="normal" title="Connect with LinkedIn">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleLinkedINTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bMJ-DU-2eY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="neg-H5-vso" firstAttribute="leading" secondItem="afp-3A-9R3" secondAttribute="leading" constant="50" id="5vX-Ag-Z2b"/>
+                                    <constraint firstItem="qRZ-wp-ive" firstAttribute="centerX" secondItem="afp-3A-9R3" secondAttribute="centerX" id="7Rb-vb-JgX"/>
+                                    <constraint firstItem="4l6-9J-Sdp" firstAttribute="centerX" secondItem="afp-3A-9R3" secondAttribute="centerX" id="BNe-4u-lGi"/>
+                                    <constraint firstItem="4l6-9J-Sdp" firstAttribute="top" secondItem="afp-3A-9R3" secondAttribute="top" constant="175" id="DTM-va-3gh"/>
+                                    <constraint firstAttribute="trailing" secondItem="neg-H5-vso" secondAttribute="trailing" constant="50" id="DVp-vd-ff9"/>
+                                    <constraint firstAttribute="trailing" secondItem="aHk-nq-eoo" secondAttribute="trailing" constant="50" id="F3M-NH-RHJ"/>
+                                    <constraint firstItem="neg-H5-vso" firstAttribute="centerX" secondItem="afp-3A-9R3" secondAttribute="centerX" id="GFY-vg-S3j"/>
+                                    <constraint firstAttribute="bottom" secondItem="neg-H5-vso" secondAttribute="bottom" constant="306" id="GFb-fl-hP9"/>
+                                    <constraint firstAttribute="trailing" secondItem="4l6-9J-Sdp" secondAttribute="trailing" constant="50" id="I5M-dv-7RM"/>
+                                    <constraint firstAttribute="trailing" secondItem="qRZ-wp-ive" secondAttribute="trailing" constant="50" id="JR4-Yc-u38"/>
+                                    <constraint firstItem="qRZ-wp-ive" firstAttribute="top" secondItem="aHk-nq-eoo" secondAttribute="bottom" constant="10" id="R9z-Ju-sp9"/>
+                                    <constraint firstItem="qRZ-wp-ive" firstAttribute="leading" secondItem="afp-3A-9R3" secondAttribute="leading" constant="50" id="XJi-Jz-Fym"/>
+                                    <constraint firstItem="4l6-9J-Sdp" firstAttribute="leading" secondItem="afp-3A-9R3" secondAttribute="leading" constant="50" id="cDp-FM-RGR"/>
+                                    <constraint firstItem="aHk-nq-eoo" firstAttribute="top" secondItem="4l6-9J-Sdp" secondAttribute="bottom" constant="10" id="fCq-AU-18G"/>
+                                    <constraint firstItem="neg-H5-vso" firstAttribute="top" secondItem="qRZ-wp-ive" secondAttribute="bottom" constant="10" id="jsb-OF-vhv"/>
+                                    <constraint firstItem="aHk-nq-eoo" firstAttribute="centerX" secondItem="afp-3A-9R3" secondAttribute="centerX" id="lIx-jq-Cka"/>
+                                    <constraint firstItem="aHk-nq-eoo" firstAttribute="leading" secondItem="afp-3A-9R3" secondAttribute="leading" constant="50" id="pum-7W-BUv"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="afp-3A-9R3" secondAttribute="bottom" id="1qS-Wf-XhU"/>
+                            <constraint firstItem="afp-3A-9R3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Va7-1a-Uaa"/>
+                            <constraint firstItem="afp-3A-9R3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZSL-a8-FsL"/>
+                            <constraint firstAttribute="trailing" secondItem="afp-3A-9R3" secondAttribute="trailing" id="vuo-XB-fSp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
