@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A65401E592540BD8A157A362 /* Pods_SocialMediaLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132631539F5701BD9E399230 /* Pods_SocialMediaLogin.framework */; };
 		FB95F05F1FA1CF3700CEB40E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95F05E1FA1CF3700CEB40E /* AppDelegate.swift */; };
 		FB95F0611FA1CF3700CEB40E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95F0601FA1CF3700CEB40E /* ViewController.swift */; };
 		FB95F0641FA1CF3700CEB40E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB95F0621FA1CF3700CEB40E /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		132631539F5701BD9E399230 /* Pods_SocialMediaLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialMediaLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D72CDCC8A315E60F3E0ED2 /* Pods-SocialMediaLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMediaLogin/Pods-SocialMediaLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		F7BD10B18E8F7616A48BCACF /* Pods-SocialMediaLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMediaLogin/Pods-SocialMediaLogin.release.xcconfig"; sourceTree = "<group>"; };
 		FB95F05B1FA1CF3700CEB40E /* SocialMediaLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMediaLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB95F05E1FA1CF3700CEB40E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB95F0601FA1CF3700CEB40E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A65401E592540BD8A157A362 /* Pods_SocialMediaLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00A1802E9263692273CFFCBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				132631539F5701BD9E399230 /* Pods_SocialMediaLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A20284E2D53C7502AC387459 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4D72CDCC8A315E60F3E0ED2 /* Pods-SocialMediaLogin.debug.xcconfig */,
+				F7BD10B18E8F7616A48BCACF /* Pods-SocialMediaLogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FB95F0521FA1CF3700CEB40E = {
 			isa = PBXGroup;
 			children = (
 				FB95F05D1FA1CF3700CEB40E /* SocialMediaLogin */,
 				FB95F05C1FA1CF3700CEB40E /* Products */,
+				A20284E2D53C7502AC387459 /* Pods */,
+				00A1802E9263692273CFFCBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB95F06D1FA1CF3700CEB40E /* Build configuration list for PBXNativeTarget "SocialMediaLogin" */;
 			buildPhases = (
+				6D9F4B1723B7194308F030C7 /* [CP] Check Pods Manifest.lock */,
 				FB95F0571FA1CF3700CEB40E /* Sources */,
 				FB95F0581FA1CF3700CEB40E /* Frameworks */,
 				FB95F0591FA1CF3700CEB40E /* Resources */,
+				F1EA430DF44A05054133814F /* [CP] Embed Pods Frameworks */,
+				5B1DE1609F0E431E05BCE9C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,6 +198,79 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B1DE1609F0E431E05BCE9C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SocialMediaLogin/Pods-SocialMediaLogin-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialMediaLogin/Pods-SocialMediaLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D9F4B1723B7194308F030C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialMediaLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1EA430DF44A05054133814F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SocialMediaLogin/Pods-SocialMediaLogin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialMediaLogin/Pods-SocialMediaLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB95F0571FA1CF3700CEB40E /* Sources */ = {
@@ -301,6 +401,7 @@
 		};
 		FB95F06E1FA1CF3700CEB40E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4D72CDCC8A315E60F3E0ED2 /* Pods-SocialMediaLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = STRYF8536N;
@@ -314,6 +415,7 @@
 		};
 		FB95F06F1FA1CF3700CEB40E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7BD10B18E8F7616A48BCACF /* Pods-SocialMediaLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = STRYF8536N;
