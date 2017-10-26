@@ -11,7 +11,7 @@ import TwitterKit
 
 public class TwitterServices {
     
-    public static let shared = FacebookServices()
+    public static let shared = TwitterServices()
     public typealias LoginHandler = (User?) -> Void
 
     public func login (completion: @escaping LoginHandler) {
