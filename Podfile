@@ -9,7 +9,7 @@ target 'SocialMediaLogin' do
   pod 'Google/SignIn'
   pod 'FacebookCore'
   pod 'FacebookLogin'
-  pod 'Fabric'
+  #pod 'Fabric'
   pod 'TwitterKit'
   
   # Pods for SocialMediaLogin

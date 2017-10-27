@@ -17,6 +17,7 @@
 		FB95F07A1FA1EE1A00CEB40E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95F0791FA1EE1A00CEB40E /* User.swift */; };
 		FB95F07C1FA1F35100CEB40E /* Facebook Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95F07B1FA1F35100CEB40E /* Facebook Services.swift */; };
 		FB95F07E1FA203F600CEB40E /* TwitterServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95F07D1FA203F600CEB40E /* TwitterServices.swift */; };
+		FB9F53CF1FA21D32005A7B82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB9F53CE1FA21D32005A7B82 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		FB95F0791FA1EE1A00CEB40E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
 		FB95F07B1FA1F35100CEB40E /* Facebook Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Facebook Services.swift"; path = "Model/Facebook/Facebook Services.swift"; sourceTree = "<group>"; };
 		FB95F07D1FA203F600CEB40E /* TwitterServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterServices.swift; path = Model/Twitter/TwitterServices.swift; sourceTree = "<group>"; };
+		FB95F07F1FA2160A00CEB40E /* SocialMediaLogin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialMediaLogin-Bridging-Header.h"; sourceTree = "<group>"; };
+		FB9F53CE1FA21D32005A7B82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 		FB95F0521FA1CF3700CEB40E = {
 			isa = PBXGroup;
 			children = (
+				FB9F53CE1FA21D32005A7B82 /* GoogleService-Info.plist */,
+				FB95F07F1FA2160A00CEB40E /* SocialMediaLogin-Bridging-Header.h */,
 				FB95F05D1FA1CF3700CEB40E /* SocialMediaLogin */,
 				FB95F05C1FA1CF3700CEB40E /* Products */,
 				A20284E2D53C7502AC387459 /* Pods */,
@@ -176,6 +181,7 @@
 					FB95F05A1FA1CF3700CEB40E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = STRYF8536N;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -204,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB95F0691FA1CF3700CEB40E /* LaunchScreen.storyboard in Resources */,
+				FB9F53CF1FA21D32005A7B82 /* GoogleService-Info.plist in Resources */,
 				FB95F0661FA1CF3700CEB40E /* Assets.xcassets in Resources */,
 				FB95F0641FA1CF3700CEB40E /* Main.storyboard in Resources */,
 			);
@@ -420,11 +427,14 @@
 			baseConfigurationReference = E4D72CDCC8A315E60F3E0ED2 /* Pods-SocialMediaLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = STRYF8536N;
 				INFOPLIST_FILE = SocialMediaLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nickelfox.SocialMediaLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialMediaLogin-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -434,11 +444,13 @@
 			baseConfigurationReference = F7BD10B18E8F7616A48BCACF /* Pods-SocialMediaLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = STRYF8536N;
 				INFOPLIST_FILE = SocialMediaLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nickelfox.SocialMediaLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialMediaLogin-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
